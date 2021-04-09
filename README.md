@@ -8,11 +8,15 @@ The main purpose of this script is to make the Pi emulate a keyboard when connec
 
 This project is voluntary work and is small and simple designed to be used as a base for more complex projects (like hot keyboard remapping, etc)
 
-This has been tested on my Raspberry Pi Zero W on the 21st of March 2016.
+This has been tested on my Raspberry Pi Zero W with Rasbian Buster the 18/04/2020
 
 ## WARNING
 
-⚠️️  ⚠️️  Do not connect the Pi using the power connector. Use the data port instead. 
+⚠️️⚠️️Do not connect the Pi using the power connector. Use the data port instead. 
+
+## Kernel Warning
+
+Since 2017 the default Kernel on the Rpi W seems broken with keyboard emulation. To fix the problem upgrade to the latest version with the ```rpi-update``` command (not installed by default)
 
 ## Install
 
@@ -30,5 +34,5 @@ $ sudo reboot
 This script will send scancodes to the computer connected to the Pi.
 
 ```
-$ sudo test.sh
+$ sudo ./test.sh
 ```
